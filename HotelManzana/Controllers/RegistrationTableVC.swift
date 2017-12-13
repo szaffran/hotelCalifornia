@@ -23,6 +23,16 @@ class RegistrationTableVC: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-   
+    @IBAction func doneBarButtonTapped(_ sender: UIBarButtonItem) {
+        let firstName = firstNameTextField.text ?? ""
+         let secondName = secondNameTextField.text ?? ""
+         let eMail = eMailTextField.text ?? ""
+        
+        print ("First Name \(firstName)")
+         print ("Second Name \(secondName)")
+         print ("email \(eMail)")
+        
+    }
+    
 
 }

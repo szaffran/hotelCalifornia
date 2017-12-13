@@ -132,7 +132,13 @@
                             <outlet property="delegate" destination="x33-1M-Yug" id="qrh-2w-hdS"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="jiA-nu-gzp"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="jiA-nu-gzp">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="b3g-nv-Nkz">
+                            <connections>
+                                <action selector="doneBarButtonTapped:" destination="x33-1M-Yug" id="8x7-V9-M4B"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="eMailTextField" destination="exs-sD-QEZ" id="GIs-cd-hAN"/>
                         <outlet property="firstNameTextField" destination="LFM-2U-7XD" id="dls-Rx-5JK"/>
